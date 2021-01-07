@@ -1,0 +1,23 @@
+#+TITLE: Tad Fisher
+
+This is my professional resumé, with a reproducible build environment described in the Nix language.
+
+* Building
+
+1. If necessary, install `nix`, either via your package manager or with this one-liner:
+
+   #+begin_example
+   $ curl -L https://nixos.org/nix/install | sh
+   #+end_example
+
+2. Launch a shell with Nix flakes support:
+
+   #+begin_example
+   $ nix-shell -p nixFlakes
+   #+end_example
+
+3. Fetch dependencies and build!
+
+   #+begin_example
+   $ nix build .
+   #+end_example
