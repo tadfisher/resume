@@ -1,0 +1,82 @@
+%% start of file `new.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{roboto-mono}
+\usepackage{roboto}
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{\texttt{Tad}}
+\familyname{\texttt{Fisher}}
+\title{Android Engineer}               % optional, remove the line if not wanted
+\phone[mobile]{+1~(503)~866~0023}                     % optional, remove the line if not wanted
+%\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{tadfisher@gmail.com}                          % optional, remove the line if not wanted
+\homepage{github.com/tadfisher}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+%\photo[110pt][0.01pt]{picture.jpg}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Summary}
+As an Android engineer with a background in web and backend engineering, I’m looking to expand my technical and leadership skills in a senior engineering role. I’m passionate about user experience and about architecting systems that accelerate the ability of my teammates to get work done.
+
+\section{Experience}
+\cventry{2013--2021}{Senior Android Engineer}{Simple Finance Technology Corp.}{Portland, OR}{}{Second hire on the Android team. Wrote core features including Goals, Bill Pay, Instant Transfers, and Loans. Led initiatives to create a sustainable architecture and manage the complexity introduced by a growing team and burgeoning product needs. Designed the continuous integration workflow for all client applications. Played a mentorship role, keeping the Android team up-to-date with best practices and improving the developer experience.}
+\cventry{2010--2013}{Web Application Developer}{ALTRES Information Services}{Honolulu, HI}{}{Designed and built full-stack web applications for Human Resources clients for use by thousands of employees. Used modern web standards and open-source libraries to drag a legacy system into the HTML5 era. Interfaced with third-party APIs for mobile and SMS support.}
+\cventry{2007--2010}{Student Web Developer}{Portland State University}{Portland, OR}{}{Wrote and maintained a large-scale employee scheduling system for use by University staff and student workers. Built a hiring system to ensure compliance with federal Affirmative Action rules and guidelines. Maintained a public-facing Drupal site for the Office of Information Technologies.}
+
+\section{Education}
+\cventry{2006--2010}{BS, Computer Science}{Portland State University}{Portland, OR}{}{}{}
+\cvlistitem{\textbf{Capstone Project:} ``\textit{Virtual Ring Routing for Linux},'' under supervision of \textbf{Prof. Warren Harrison}, github.com/subtlegiant/Alpaca-VRR}
+
+\section{Open Source}
+
+\begin{cvcolumns}
+
+\cvcolumn{\href{https://github.com/tadfisher/android-nixpkgs}{android-nixpkgs}}{Android SDK packaged with the Nix package manager. Enables reproducible build environments for both engineers and CI. }
+\cvcolumn{\href{https://github.com/tadfisher/gradle2nix}{gradle2nix}}{Generate Nix expressions which build Gradle-based projects. }
+\end{cvcolumns}
+\begin{cvcolumns}
+\cvcolumn{\href{https://github.com/tadfisher/gradle-test-lab-plugin}{gradle-test-lab-plugin}}{Lightweight solution to run tests on Firebase Test Lab directly from Gradle. }
+\cvcolumn{\href{https://github.com/tadfisher/pass-otp}{pass-otp}}{\texttt{password-store} extension for managing one-time password (OTP) tokens. }
+\end{cvcolumns}
+\end{document}
+
+
+%% end of file `template.tex'.
